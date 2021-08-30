@@ -72,3 +72,20 @@ pTags[4].textContent =siteContent['main-content'] ['vision-content'];
 
 const mainImg = document.getElementById('middle-img');
 mainImg.setAttribute('src', siteContent['main-content']['middle-img-src']);
+
+//contact section
+const contactName = document.querySelector('.contact h4');
+contactName.textContent = siteContent['contact']['contact-h4'];
+
+const address = document.querySelector('.contact p');
+address.textContent = siteContent['contact']['address']
+
+const phone = document.querySelector('.contact p:nth-of-type(2)');
+phone.textContent = siteContent ['contact']['phone'];
+
+const email = document.querySelector('.contact p:nth-of-type(3)');
+email.textContent = siteContent ['contact']['email'];
+
+//footer section
+const footer = document.querySelector('.contact');
+footer.nextElementSibling.textContent = siteContent['footer']['copyright'];
